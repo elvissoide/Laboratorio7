@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.contenedor {
+    border: 5px solid rebeccapurple;
+    background-color: white;
+    display: grid;
+    /* FUNCIONES ESPECIALES */
+    /* MINMAX --> HASTA CUANTO MINIMO SE VA A ACERRAR Y HASTA CUANTO MAXIMO SE VA A EXPANDIR */
+    /* REPEAR --> SE VA A REPETIR Y AJUSTAR ACUTOMATICMANTE LAS CELDAS */
+    grid-template-columns: minmax(30px, 300px) 50px minmax(40px, 200px);
+    grid-template-rows: repeat(3, auto);
+
+
+    place-content: center;
+
+
+}
+
+.item {
+    border: 5PX solid sienna;
+    font-size: 2rem;
+}

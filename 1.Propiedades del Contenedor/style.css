@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 2rem;
+}
+
+.contenedor{
+  border: 5px solid navy;
+  background-color: aquamarine;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 150px ;
+  height:  600px;
+
+
+  /* modifico mis items desde el contenedor  */
+  justify-items: end;
+
+  /* CENTRAR FORM CORTA */
+  place-content: center;
+
+}
+
+.item{
+  border: 5px solid crimson;
+  text-align: center;
+  font-size: 4rem;
+}
+.item2{
+  border: 5px solid crimson;
+  text-align: center;
+  font-size: 4rem;
+}

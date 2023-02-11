@@ -1,0 +1,110 @@
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+}
+
+h1 {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: white;
+  opacity: 50%;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+h3 {
+  position: relative;
+}
+
+table {
+  position: relative;
+}
+
+
+.grid-container {
+  border-style: none;
+  display: grid;
+  gap: 2%;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "first first second third"
+    "fourth fifth fifth third";
+  padding: 10%;
+}
+
+.testimonial {
+  color: white;
+  align-items: flex-end;
+  border-radius: 5px;
+  padding: 40px;
+}
+
+.testimonial-1 {
+  color: white;
+  background-color: hsl(263, 55%, 52%);
+  grid-area: first;
+}
+
+.quotation-img-grid-section {
+  grid-area: first;
+  justify-self: right;
+  margin-right: 20%;
+
+}
+
+.quotation-img {
+  width: 140%;
+}
+
+.testimonial-2 {
+  color: white;
+  background-color: hsl(217, 19%, 35%);
+  grid-area: second;
+}
+
+.testimonial-3 {
+  background-color: white;
+  grid-area: third;
+}
+
+.testimonial-4 {
+  background-color: white;
+  grid-area: fourth;
+}
+
+.testimonial-5 {
+  background-color: hsl(219, 29%, 14%);
+  grid-area: fifth;
+}
+
+.dark-grayish-blue {
+  color: hsl(217, 19%, 35%);
+}
+
+
+.image-cell {
+  padding-right: 10px;
+}
+
+.profile-pic {
+  border-radius: 100%;
+  width: 30px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255, 0.25);
+}
+
+.footer p {
+  color: black;
+}

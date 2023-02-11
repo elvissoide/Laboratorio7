@@ -1,0 +1,41 @@
+.contenedor{
+    border: 5px solid rebeccapurple;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    /* aqui estoy definiendo mis areas */
+    grid-template-areas: 
+        "header header header"
+        "side main main"
+        "side main main";
+
+    place-content: center;
+
+
+}
+
+.item{
+ font-size: 2rem;
+}
+
+.item-1{
+    border: 5px solid salmon;
+    background-color: blueviolet;
+    grid-area: header;
+
+}
+
+.item-2{
+    border: 5px solid yellowgreen;
+    background: goldenrod;
+    grid-area: side;
+}
+
+.item-3{
+    border: 5px solid skyblue;
+    background-color: crimson;
+    grid-area: main;
+}
+
+

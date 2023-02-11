@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.contenedor {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 75px 75px 75px;
+  height: 600px;
+  place-content: center;
+
+}
+
+.item {
+  font-size: 2rem;
+}
+
+.item-1 {
+  border: 5px solid salmon;
+  background-color: blueviolet;
+
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+}
+
+.item-2 {
+  border: 5px solid yellowgreen;
+  background: goldenrod;
+
+  grid-row: 2 / 4;
+
+}
+
+.item-3 {
+  border: 5px solid skyblue;
+  background-color: crimson;
+
+  grid-area: 2 / 2 / 4 / 4;
+
+
+}
